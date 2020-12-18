@@ -15,6 +15,14 @@ class CreateLicensesTable extends Migration
     {
         Schema::create('licenses', function (Blueprint $table) {
             $table->id();
+            $table->string('name');
+            $table->string('father_name');
+            $table->string('gender');                      
+            $table->string('dob');
+            $table->string('phone_number');
+            $table->string('address');
+            $table->string('your_photo');
+            $table->string('citizenship_photo');
             $table->timestamps();
         });
     }
